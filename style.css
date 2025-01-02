@@ -1,0 +1,112 @@
+:root{
+    --color-primary-light:#50e4c1;
+    --color-secondary-dark:#38a088;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "Quattrocento";
+    /* font-weight: 300; */
+}
+/*1 rem = 10px i.e 62.5/100*16=16*/
+html{
+    font-size: 62.5%; /*62.5% of 16px since default font size in browser is 16px*/
+}
+.back-image{
+    background-image:  linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)),url("images/pexels-cottonbro-studio-4101143.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    max-width: 130rem;
+    margin: 0 auto;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;/* horizantal alignment*/
+    align-items: center;/* vertical alignment*/
+    padding: 5.6rem 0rem;
+    flex-direction: column;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo{
+    margin-bottom: 5rem;
+}
+.phill-logo{
+    height: 12rem;
+    width: auto;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 6rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 7.5rem;
+}
+p{
+    font-size: 3rem;
+    color: #fff;
+}
+.btn-1{
+    background-color: var(--color-primary-light);
+    border: none;
+    padding: 2rem 4rem;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 6rem;
+    letter-spacing: 1px;
+    /* transition: all 0.3s; */
+}
+.btn-1:hover{
+    background-color: var(--color-secondary-dark);
+    cursor: pointer;
+}
+.featured-section{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.featured-img-box{
+    padding: 2.4rem 0rem;
+}
+.featured-img-box img:not(:last-child){
+    margin-right: 12rem;
+}
+.img-container{
+    animation: scroll-left 10s linear alternate-reverse infinite;
+}
+@keyframes scroll-left{
+    from{
+         transform: translate(100%);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+.btn-1:active{
+    
+}
+
+
+
